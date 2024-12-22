@@ -12,6 +12,7 @@
     <!-- Main Content -->
     <section>
         <h1>Todoki</h1>
+        <p>A Game List Website for your favourite games.</p>
     </section>
 
     <!-- Footer -->
