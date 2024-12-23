@@ -9,27 +9,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <style>
         *{
-            background-color: #181717;
             font-family: "Space Grotesk", serif;
         }
+        body{
+            background-color: #181717;
+        }
     .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        position: fixed;
+        width: 12rem;
+        height: 5rem;
+        max-width: 100vw;
+        max-height: 100dvh;
+        margin: auto;
         color: white;
+        text-align: center;
+        inset: 0px;
     }
     button{
         padding: 10px 20px;
-        border-radius: 10px;
-        background-color: #2a2a2a;
+        background-color: white;
+        color: #181717;
+        border: none;
+        cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+    }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Oops,You're on Wrong Page!</h1>
-        <button><a" href="index.php">Go to Home</button>
+        <h2>Oops, You're on Wrong Page!</h2>
+        <button><a style="text-decoration: none; color: black; " href="index.php">Go to Home</button>
     </div>
 </body>
 </html>
