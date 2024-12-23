@@ -4,10 +4,11 @@
 if  ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST["email"];
     $password = $_POST["password"];
+    $name = $_POST["name"];
 
     $hash = password_hash($password, PASSWORD_DEFAULT);
 
-    $sql = "INSERT INTO users (email, password) VALUES ('$email', '$hash')";
+    $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$hash')";
     $result = mysqli_query($conn, $sql);
 
 
@@ -40,12 +41,11 @@ if  ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php include("components/navbar.php"); ?>
 
     <!-- Main Content -->
-    <div class="container w-1/2 bg-">
-        <form action="signup.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>        
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+    <div class="px-[30rem] mx-10 bg-[#160F0F]">
+        <form class="flex flex-col text-center align-center justify-center" action="signup.php" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>        
+            <input type="email" id="email" name="email" placeholder="Email" required>        
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <button type="submit">Sign Up</button>
         </form>
     </div>
