@@ -65,9 +65,9 @@ button{
     padding: 0 3.5rem;
 }
 
-.login {
+.signup {
     width: 100%;
-    padding: 1rem 13rem;
+    padding: 1rem 10rem;
     margin: 1rem 0;
     border-radius:29px;
     border: 1px solid #FFFFFF;
@@ -83,6 +83,7 @@ a {
     color: white;
 
 }
+
 
 ::-webkit-scrollbar{
     width: 5px;
