@@ -10,7 +10,6 @@
   nav a, nav img {
     width: 40px;
     height: 40px;
-    cursor: pointer;
   }
 
   /* Dropdown button styles */
@@ -91,7 +90,7 @@
 </style>
 
 <nav>
-  <a href="index.php"><img src="assets/logo.svg" alt="Logo"></a>
+  <img src="assets/logo.svg" alt="Logo">
   <div class="dropdown">
     <button onclick="toggleDropdown()" class="dropbtn">
       <img src="assets/acc.svg" alt="User">
