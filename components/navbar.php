@@ -97,7 +97,8 @@
     </button>
     <div id="myDropdown" class="dropdown-content">
     <div class="dropdown-item">
-      <p>Hey, User!</p>
+      <p>Hey, User</p>
+      <a href="logout.php">Logout</a>
       <a href="login.php">Login</a>
       <a href="signup.php">Signup</a>
     </div>
