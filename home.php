@@ -28,8 +28,11 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 
     <!-- Main Content -->
     <section>
-        <h1>Todoki</h1>
-        <p>A Game List Website for your favourite games.</p>
+        <div class="content">
+            <h2>Welcome to Todoki</h2>
+            <p>Explore our features and enjoy your stay.</p>
+            <button type="button">Learn More</button>
+        </div>
     </section>
 
     <!-- Footer -->
