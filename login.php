@@ -2,7 +2,7 @@
     include("helpers/_dbconnect.php");
 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        if(isset($_POST["email"]) && isset($_POST["password"])){
+        if(isset($_POST["email"]) && isset($_POST["password"] )){
             $email = $_POST["email"];
             $password = $_POST["password"];
 
@@ -15,7 +15,9 @@
                         session_start();
                         $_SESSION['loggedin'] = true;
                         $_SESSION['email'] = $email;
-                        header("location: index.php");
+                        $_SESSION['name'] = $row['name'];
+
+                        header("location: home.php");
                     }
                 }
 

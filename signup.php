@@ -13,7 +13,7 @@ if  ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     if ($result) {
-       header("Location: index.php");
+       header("Location: home.php");
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }

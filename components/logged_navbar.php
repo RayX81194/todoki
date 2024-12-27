@@ -88,6 +88,9 @@
   }
 
 </style>
+<?php
+$name = $_SESSION['name'];
+?>
 
 <nav>
   <img src="assets/logo.svg" alt="Logo">
@@ -97,9 +100,8 @@
     </button>
     <div id="myDropdown" class="dropdown-content">
     <div class="dropdown-item">
-      <p>Hey, User</p>
-      <a href="login.php">Login</a>
-      <a href="signup.php">Signup</a>
+      <p>Hey, <?php echo $name; ?></p>
+      <a href="logout.php">Logout</a>
     </div>
     </div>
   </div>
