@@ -38,7 +38,7 @@ if  ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Main Content -->
     <div class="container">
-        <section class="login-section">
+        <section class="signup-section">
             <h1 class="create-account">Create an Account</h1>
             <form action="signup.php" method="post">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>

@@ -11,28 +11,33 @@ body{
     margin: 0 2.5rem;
 }
 
-.container{
-    padding: 1rem;
+.container {
     background-color: #160F0F;
     border-radius: 1rem;
-    padding: 1rem 30rem;
-    max-width: 1500px;
+    max-width: 1500px; /* Fixed width for larger screens */
     width: 100%;
     margin: 0 auto;
-    text-align: center;
-}
-
-.welcome{
-    font-size: 1.875rem;
-    padding: 2rem 3rem;
-}
-
-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem; /* Uniform padding */
 }
+
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.welcome{
+    font-size: 1.875rem;
+    padding: 2rem;
+}
+
 
 input{
     width: 100%;
@@ -47,7 +52,7 @@ input{
 
 button{
     width: 100%;
-    padding: 1rem 5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     border: none;
     border-radius: 29px;
@@ -56,6 +61,10 @@ button{
     color: black;
     font-weight: bold;
     cursor: pointer;
+}
+
+.line{
+    text-align: center;
 }
 
 .terms{
@@ -67,7 +76,7 @@ button{
 
 .signup {
     width: 100%;
-    padding: 1rem 10rem;
+    padding: 1rem;
     margin: 1rem 0;
     border-radius:29px;
     border: 1px solid #FFFFFF;
@@ -98,3 +107,23 @@ a {
   ::-webkit-scrollbar-thumb {
     background: #585858;
   }
+
+  @media (max-width: 480px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .welcome {
+        font-size: 1.5rem;
+    }
+
+    .terms {
+        font-size: 0.7rem;
+        padding: 0;
+    }
+
+    input, button, .login {
+        font-size: 15px;
+        padding: 0.85rem;
+    }
+}
