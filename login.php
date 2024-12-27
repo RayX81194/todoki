@@ -46,7 +46,7 @@
 
     <!-- Main Content -->
     <div class="container">
-        <h1>Welcome Back!</h1>
+        <h1 class="welcome">Welcome Back!</h1>
         <form action="login.php" method="post">
             <input type="email" id="email" name="email" placeholder="Email" required>
             <input type="password" id="password" name="password" placeholder="Password" required>

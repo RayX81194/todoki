@@ -87,13 +87,35 @@
     color: white;
   }
 
+  .left-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  input{
+    width: 100%;
+    padding: 1rem 7rem 1rem 1rem;
+    border-radius: 29px;
+    background-color: #232020;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+
 </style>
 <?php
 $name = $_SESSION['name'];
 ?>
 
 <nav>
-  <img src="assets/logo.svg" alt="Logo">
+    <div class="left-nav">
+        <img src="assets/logo.svg" alt="Logo">
+        <form method="get" action="search.php">
+            <input type="text" name="search" placeholder="Search">
+        </form>
+    </div>
   <div class="dropdown">
     <button onclick="toggleDropdown()" class="dropbtn">
       <img src="assets/acc.svg" alt="User">

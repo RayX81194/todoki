@@ -38,17 +38,27 @@ if  ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- Main Content -->
     <div class="container">
-        <h1>Create an Account</h1>
-        <form action="signup.php" method="post">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-            <input type="password" id="password" name="password" placeholder="Password" required>
-            <button type="submit">Continue to Sign Up</button>
-        </form>
-        <p>Already have an account?</p>
-        <a href="login.php"><p class="login">Log In</p></a>
-        <p class="terms">By signing up, you agree to our Terms of Service and Privacy Policy. For information on how we utilize cookies, please refer to our Cookies Policy.
-        </p>
+        <section class="login-section">
+            <h1 class="create-account">Create an Account</h1>
+            <form action="signup.php" method="post">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required on>
+                <p class="password-requirements">Password should have:</p>
+                <ul>
+                    <li>At least 8 characters or more.</li>
+                    <li>A uppercase character and a lowercase character.</li>
+                    <li>At least a number.</li>
+                </ul>
+                <button type="submit">Continue to Sign Up</button>
+            </form>
+            <div class="line">
+                <p>Already have an account?</p>
+                <a href="login.php"><p class="login">Log In</p></a>
+                <p class="terms">By signing up, you agree to our Terms of Service and Privacy Policy. For information on how we utilize cookies, please refer to our Cookies Policy.
+                </p>
+            </div>
+        </section>
     </div>
 
     <!-- Footer -->

@@ -1,40 +1,48 @@
-*{
+/* Base styles */
+* {
     font-family: "Space Grotesk", serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #181717;
     color: white;
     margin: 0 2.5rem;
 }
 
-.container{
-    padding: 1rem;
+.container {
     background-color: #160F0F;
     border-radius: 1rem;
-    padding: 1rem 30rem;
-    max-width: 1500px;
+    max-width: 1500px; /* Fixed width for larger screens */
     width: 100%;
     margin: 0 auto;
-    text-align: center;
-}
-
-h1{
-    font-size: 1.875rem;
-    padding: 2rem 3rem;
-}
-
-form{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2rem; /* Uniform padding */
 }
 
-input{
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.create-account {
+    font-size: 1.875rem;
+    padding-bottom: 1rem;
+}
+
+.line{
+    text-align: center;
+}
+
+input {
     width: 100%;
     padding: 1rem 1rem;
     margin-bottom: 1rem;
@@ -45,9 +53,9 @@ input{
     outline: none;
 }
 
-button{
+button {
     width: 100%;
-    padding: 1rem 5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     border: none;
     border-radius: 29px;
@@ -58,42 +66,75 @@ button{
     cursor: pointer;
 }
 
-.terms{
+.terms {
     margin: 1rem 0;
     font-size: 0.75rem;
     color: #A5A5A5;
-    padding: 0 3.5rem;
+    padding: 0 1rem;
 }
 
 .login {
     width: 100%;
-    padding: 1rem 13rem;
+    padding: 1rem;
     margin: 1rem 0;
-    border-radius:29px;
+    border-radius: 29px;
     border: 1px solid #FFFFFF;
     color: white;
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
     font-size: 17px;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: white;
-
 }
 
-::-webkit-scrollbar{
-    width: 5px;
+.password-requirements {
+    font-size: 0.75rem;
+    color: #A5A5A5;
+    padding: 0 0.5rem;
+}
 
+ul{
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+ul li{
+    font-size: 0.75rem;
+    color: #A5A5A5;
+    
+}
+
+::-webkit-scrollbar {
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
     background: #131212;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #585858;
-  }
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .container {
+        padding: 2rem;
+    }
+
+    .create-account {
+        font-size: 1.5rem;
+    }
+
+    .terms {
+        font-size: 0.7rem;
+    }
+
+    input, button, .login {
+        font-size: 15px;
+        padding: 0.85rem;
+    }
+}

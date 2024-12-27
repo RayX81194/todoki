@@ -22,7 +22,7 @@ body{
     text-align: center;
 }
 
-h1{
+.welcome{
     font-size: 1.875rem;
     padding: 2rem 3rem;
 }
