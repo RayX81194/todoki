@@ -9,3 +9,114 @@ body{
     color: white;
     margin: 0 2.5rem;
 }
+
+.container {
+    background-color: #160F0F;
+    border-radius: 1rem;
+    max-width: 1500px; /* Fixed width for larger screens */
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem; /* Uniform padding */
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.headlines{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    max-width: 450px;
+}
+
+.descriptions{
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+.links{
+    display: flex;
+    gap: 1rem;
+}
+
+.logins {
+    width: 100%;
+    padding: 1rem 3.6rem;
+    margin: 1rem 0;
+    border-radius: 29px;
+    border: 1px solid #FFFFFF;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+}
+
+.logins:hover{
+    background-color: white;
+    color: black;
+}
+
+.signups {
+    width: 100%;
+    padding: 1rem 3.6rem;
+    margin: 1rem 0;
+    border-radius: 29px;
+    border: 1px solid #FFFFFF;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+}
+
+.signups:hover{
+    color: rgb(151, 151, 151);
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.3rem;
+    }
+
+    .headlines {
+        font-size: 2rem;
+        max-width: 500px;
+    }
+
+    .descriptions {
+        font-size: 0.75rem;
+    }
+
+    .logins {
+        padding: 1rem 2rem;
+        font-size: 15px;
+    }    
+
+    .signups {
+        padding: 1rem 2rem;
+        font-size: 15px;
+    }
+}
+
+

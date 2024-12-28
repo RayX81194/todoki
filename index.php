@@ -14,7 +14,16 @@
     <?php include("components/navbar.php"); ?>
 
     <div class="container">
-        <h1>Start</h1>
+        <header>
+            <div class="intro">
+                <h1 class="headlines">Never Forget Any Game Again</h1>
+                <p class="descriptions">Explore a vast library of games, view detailed information, and track your favorites effortlessly in one convenient platform.</p>
+            </div>
+            <div class="links">
+                <a href="login.php"><button class="logins">Login</button></a>
+                <a href="signup.php"><button class="signups">Sign Up</button></a>
+            </div>
+        </header>
     </div>
 
     <?php include("components/footer.php"); ?>
