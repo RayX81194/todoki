@@ -107,7 +107,7 @@ header{
 
 .features{
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     margin: 2rem 0;
 }
@@ -115,7 +115,7 @@ header{
 .feature{
     background-color: #160F0F;  
     padding: 2rem;
-    border-radius: 29px;
+    border-radius: 1rem;
 }
 
 .feature img{
@@ -130,7 +130,7 @@ header{
 .feature h1{
     font-size: 2rem;
     font-weight: bold;
-    margin: 1rem 0;
+    margin: 1rem 0 0.5rem 0;
 }
 
 .feature p{
@@ -159,6 +159,18 @@ header{
     .features{
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
+
+    .feature{
+        padding: 1.5rem;
+    }
+
+    .feature h1{
+        font-size: 1.5rem;
+    }
+
+    .feature p{
+        font-size: 0.75rem;
+    } 
 
     .links{
         flex-direction: column;

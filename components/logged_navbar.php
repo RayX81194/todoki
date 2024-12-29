@@ -111,7 +111,7 @@ $name = $_SESSION['name'];
 
 <nav>
     <div class="left-nav">
-        <img src="assets/logo.svg" alt="Logo">
+        <a href="home.php"><img src="assets/logo.svg" alt="Logo"></a>
         <form method="get" action="search.php">
             <input type="text" name="search" placeholder="Search">
         </form>

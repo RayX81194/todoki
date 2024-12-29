@@ -90,7 +90,7 @@
 </style>
 
 <nav>
-  <img src="assets/logo.svg" alt="Logo">
+  <a href="index.php"><img src="assets/logo.svg" alt="Logo"></a>
   <div class="dropdown">
     <button onclick="toggleDropdown()" class="dropbtn">
       <img src="assets/acc.svg" alt="User">
