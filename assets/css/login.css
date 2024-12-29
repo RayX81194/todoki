@@ -38,6 +38,22 @@ body{
     padding: 2rem;
 }
 
+.err{
+    display: flex;
+    gap:0.5rem;
+    background-color: #232020;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+}
+
+.err img{
+    width: 2rem;
+}
+
 
 input{
     width: 100%;
