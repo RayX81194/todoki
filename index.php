@@ -27,6 +27,32 @@
                 <img class="header-img" src="assets/header.png" alt="Header Image">
             </div>
         </header>
+
+        <main>
+            <section class="features">
+                <div class="feature">
+                    <img src="assets/Database.svg" alt="Feature 1">
+                    <h1>Powered by IGDB</h1>
+                    <p>Access game information powered by the extensive and trusted IGDB database.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/Database.svg" alt="Feature 1">
+                    <h1>Powered by IGDB</h1>
+                    <p>Access game information powered by the extensive and trusted IGDB database.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/Database.svg" alt="Feature 1">
+                    <h1>Powered by IGDB</h1>
+                    <p>Access game information powered by the extensive and trusted IGDB database.</p>
+                </div>
+                <div class="feature">
+                    <img src="assets/Database.svg" alt="Feature 1">
+                    <h1>Powered by IGDB</h1>
+                    <p>Access game information powered by the extensive and trusted IGDB database.</p>
+                </div>
+                </div>
+            </section>
+        </main>
     </div>
 
     <?php include("components/footer.php"); ?>
