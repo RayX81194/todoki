@@ -165,8 +165,12 @@
             <h1>Rocket League</h1>
             <span>Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem, featuring intense multiplayer action and competitive gameplay.</span>
             <div class="game-links">
-                <a href="https://www.rocketleague.com/" target="_blank" class="btn1">Read More</a>
-                <a href="https://www.youtube.com/watch?v=QVVz7EvdLRk" target="_blank" class="btn2">Watch Trailer</a>
+                <div class="btn1">
+                    <a href="https://www.rocketleague.com/" target="_blank">Read More</a>
+                </div>
+                <div class="btn2">
+                    <a href="https://www.youtube.com/watch?v=QVVz7EvdLRk" target="_blank">Watch Trailer</a>
+                </div>
             </div>
         </div>
     </div>
@@ -181,8 +185,12 @@
             <h1>Black Myth: Wukong</h1>
             <span>Black Myth: Wukong is an action-adventure RPG inspired by Chinese mythology, where players take on the role of Sun Wukong in a breathtaking fantasy world.</span>
             <div class="game-links">
-                <a href="https://www.blackmythgame.com/" target="_blank" class="btn1">Read More</a>
-                <a href="https://www.youtube.com/watch?v=O2nNljv0MOw" target="_blank" class="btn2">Watch Trailer</a>
+                <div class="btn1">
+                    <a href="https://www.blackmythgame.com/" target="_blank">Read More</a>
+                </div>
+                <div class="btn2">
+                    <a href="https://www.youtube.com/watch?v=O2nNljv0MOw" target="_blank">Watch Trailer</a>
+                </div>
             </div>
         </div>
     </div>
@@ -197,8 +205,12 @@
             <h1>Red Dead Redemption 2</h1>
             <span>Red Dead Redemption 2 is an epic tale of life in America’s unforgiving heartland, featuring a massive open world and immersive storytelling.</span>
             <div class="game-links">
-                <a href="https://www.rockstargames.com/reddeadredemption2/" target="_blank" class="btn1">Read More</a>
-                <a href="https://www.youtube.com/watch?v=eaW0tYpxyp0" target="_blank" class="btn2">Watch Trailer</a>
+                <div class="btn1">
+                    <a href="https://www.rockstargames.com/reddeadredemption2/" target="_blank">Read More</a>
+                </div>
+                <div class="btn2">
+                    <a href="https://www.youtube.com/watch?v=eaW0tYpxyp0" target="_blank">Watch Trailer</a>
+                </div>
             </div>
         </div>
     </div>
@@ -213,8 +225,12 @@
             <h1>Marvel's Avengers</h1>
             <span>Marvel's Avengers is an epic, third-person action-adventure game that combines an original cinematic story with single-player and co-op gameplay.</span>
             <div class="game-links">
-                <a href="https://avengers.square-enix-games.com/" target="_blank" class="btn1">Read More</a>
-                <a href="https://www.youtube.com/watch?v=LDBojdBAjXU" target="_blank" class="btn2">Watch Trailer</a>
+                <div class="btn1">
+                    <a href="https://avengers.square-enix-games.com/" target="_blank">Read More</a>
+                </div>
+                <div class="btn2">
+                    <a href="https://www.youtube.com/watch?v=LDBojdBAjXU" target="_blank">Watch Trailer</a>
+                </div>
             </div>
         </div>
     </div>
