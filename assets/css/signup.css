@@ -41,7 +41,7 @@ body {
 .err{
     display: flex;
     gap:0.5rem;
-    background-color: #232020;
+    background-color: #112b0e;
     width: 100%;
     justify-content: start;
     align-items: center;

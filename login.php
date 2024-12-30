@@ -37,7 +37,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todoki - Login</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.svg">
-    <link href="./assets/css/login.css?v=2" rel="stylesheet">
+    <link href="./assets/css/login.css?v=4" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -33,6 +33,7 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
             <p>Explore our features and enjoy your stay.</p>
             <button type="button">Learn More</button>
         </div>
+        
     </section>
 
     <!-- Footer -->

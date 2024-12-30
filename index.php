@@ -32,8 +32,8 @@
             <section class="features">
                 <div class="feature">
                     <img src="assets/Database.svg" alt="Feature 1">
-                    <h1>Powered by IGDB</h1>
-                    <p>Access game information powered by the extensive and trusted IGDB database.</p>
+                    <h1>Powered by RAWG</h1>
+                    <p>Access game information powered by the extensive and trusted RAWG video games database.</p>
                 </div>
                 <div class="feature">
                     <img src="assets/List.svg" alt="Feature 1">
