@@ -166,9 +166,11 @@
             <span>Rocket League is a high-powered hybrid of arcade-style soccer and vehicular mayhem, featuring intense multiplayer action and competitive gameplay.</span>
             <div class="game-links">
                 <div class="btn1">
+                <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://www.rocketleague.com/" target="_blank">Read More</a>
                 </div>
                 <div class="btn2">
+                <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://www.youtube.com/watch?v=QVVz7EvdLRk" target="_blank">Watch Trailer</a>
                 </div>
             </div>
@@ -186,9 +188,11 @@
             <span>Experience the legendary journey of the Monkey King in this action-packed RPG, featuring stunning visuals and intense combat inspired by Chinese mythology.</span>
             <div class="game-links">
                 <div class="btn1">
+                <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://www.blackmythgame.com/" target="_blank">Read More</a>
                 </div>
                 <div class="btn2">
+                <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://www.youtube.com/watch?v=O2nNljv0MOw" target="_blank">Watch Trailer</a>
                 </div>
             </div>
@@ -206,9 +210,11 @@
             <span>Immerse yourself in the epic tale of outlaws in the American frontier, with breathtaking landscapes and a gripping story of loyalty and betrayal.</span>
             <div class="game-links">
                 <div class="btn1">
+                <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://www.rockstargames.com/reddeadredemption2/" target="_blank">Read More</a>
                 </div>
                 <div class="btn2">
+                <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://www.youtube.com/watch?v=eaW0tYpxyp0" target="_blank">Watch Trailer</a>
                 </div>
             </div>
@@ -226,9 +232,11 @@
             <span>Join Earth's mightiest heroes in an action-adventure game that combines cinematic storytelling with thrilling single-player and co-op gameplay.</span>
             <div class="game-links">
                 <div class="btn1">
+                <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://avengers.square-enix-games.com/" target="_blank">Read More</a>
                 </div>
                 <div class="btn2">
+                <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
                     <a href="https://www.youtube.com/watch?v=-b0veB7q9P4" target="_blank">Watch Trailer</a>
                 </div>
             </div>

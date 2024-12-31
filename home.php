@@ -75,6 +75,56 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
                 </div>              
             </div>
         </div>
+        <div class="trends">
+            <div class="title">
+                <h1>Upcoming Games</h1>
+                <a href="trending.php">See More <img src="./assets/arr_right.png" alt="arrow" style="width: 20px; height: 20px; rotate: 180deg;"></a>
+            </div>
+            <div class="trend-cards">
+                <div class="trend-card">
+                    <img src="assets/rdr2_pos.jpg" alt="Red Dead Redemption 2">
+                    <div class="card-info">
+                        <span>2018</span>
+                        <h2>Red Dead Redemption 2</h2>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <img src="assets/rdr2_pos.jpg" alt="Red Dead Redemption 2">
+                    <div class="card-info">
+                        <span>2018</span>
+                        <h2>Red Dead Redemption 2</h2>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <img src="assets/rdr2_pos.jpg" alt="Red Dead Redemption 2">
+                    <div class="card-info">
+                        <span>2018</span>
+                        <h2>Red Dead Redemption 2</h2>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <img src="assets/rdr2_pos.jpg" alt="Red Dead Redemption 2">
+                    <div class="card-info">
+                        <span>2018</span>
+                        <h2>Red Dead Redemption 2</h2>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <img src="assets/rdr2_pos.jpg" alt="Red Dead Redemption 2">
+                    <div class="card-info">
+                        <span>2018</span>
+                        <h2>Red Dead Redemption 2</h2>
+                    </div>
+                </div>
+                <div class="trend-card">
+                    <img src="assets/rdr2_pos.jpg" alt="Red Dead Redemption 2">
+                    <div class="card-info">
+                        <span>2018</span>
+                        <h2>Red Dead Redemption 2</h2>
+                    </div>
+                </div>              
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
