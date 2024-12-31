@@ -8,12 +8,12 @@
     .slides {
         display: none;
         overflow: hidden;
-        width: 1500px;
+        width: 100%;
         height: 300px;
         border-radius: 29px;
     }
 
-    .slides img {
+    .banner {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -29,7 +29,7 @@
         width: 100%;
         height: 100%;
         margin-top:1.5rem;
-        padding: 0 3rem;
+        padding: 0 2rem;
         display: flex;
         align-items: start;
         justify-content: center;    
@@ -109,23 +109,23 @@
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 80%;
+        right: 6%;
         width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
         transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
         user-select: none;
+        padding: 0.5rem;
+        background-color: #181717;
+        border-radius: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
+        right: 2%;
     }
     .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
+        background-color:rgb(48, 46, 46);
     }
 
 
@@ -133,7 +133,7 @@
 </style>
 <div class="slideshow-container">
     <div class="slides">
-        <img src="./assets/cp.jpg" style="width:100%">
+        <img class="banner" src="./assets/cp.jpg" style="width:100%">
         <div class="overlay">
             <div class="genre">
                 <span>Action</span>
@@ -155,7 +155,7 @@
         </div>
     </div>
     <div class="slides">
-        <img src="./assets/rl.jpg" style="width:100%">
+        <img class="banner" src="./assets/rl.jpg" style="width:100%">
         <div class="overlay">
             <div class="genre">
                 <span>Sports</span>
@@ -175,7 +175,7 @@
         </div>
     </div>
     <div class="slides">
-        <img src="./assets/bmw.webp" style="width:100%">
+        <img class="banner" src="./assets/bmw.webp" style="width:100%">
         <div class="overlay">
             <div class="genre">
                 <span>Action</span>
@@ -183,7 +183,7 @@
                 <span>Fantasy</span>
             </div>
             <h1>Black Myth: Wukong</h1>
-            <span>Black Myth: Wukong is an action-adventure RPG inspired by Chinese mythology, where players take on the role of Sun Wukong in a breathtaking fantasy world.</span>
+            <span>Experience the legendary journey of the Monkey King in this action-packed RPG, featuring stunning visuals and intense combat inspired by Chinese mythology.</span>
             <div class="game-links">
                 <div class="btn1">
                     <a href="https://www.blackmythgame.com/" target="_blank">Read More</a>
@@ -195,7 +195,7 @@
         </div>
     </div>
     <div class="slides">
-        <img src="./assets/rdr2.webp" style="width:100%">
+        <img class="banner" src="./assets/rdr2.webp" style="width:100%">
         <div class="overlay">
             <div class="genre">
                 <span>Action</span>
@@ -203,7 +203,7 @@
                 <span>Open-World</span>
             </div>
             <h1>Red Dead Redemption 2</h1>
-            <span>Red Dead Redemption 2 is an epic tale of life in America’s unforgiving heartland, featuring a massive open world and immersive storytelling.</span>
+            <span>Immerse yourself in the epic tale of outlaws in the American frontier, with breathtaking landscapes and a gripping story of loyalty and betrayal.</span>
             <div class="game-links">
                 <div class="btn1">
                     <a href="https://www.rockstargames.com/reddeadredemption2/" target="_blank">Read More</a>
@@ -215,28 +215,28 @@
         </div>
     </div>
     <div class="slides">
-        <img src="./assets/marvel.webp" style="width:100%">
+        <img class="banner" src="./assets/marvel.webp" style="width:100%">
         <div class="overlay">
             <div class="genre">
                 <span>Action</span>
                 <span>Adventure</span>
                 <span>Superheroes</span>
             </div>
-            <h1>Marvel's Avengers</h1>
-            <span>Marvel's Avengers is an epic, third-person action-adventure game that combines an original cinematic story with single-player and co-op gameplay.</span>
+            <h1>Marvel's Rivals</h1>
+            <span>Join Earth's mightiest heroes in an action-adventure game that combines cinematic storytelling with thrilling single-player and co-op gameplay.</span>
             <div class="game-links">
                 <div class="btn1">
                     <a href="https://avengers.square-enix-games.com/" target="_blank">Read More</a>
                 </div>
                 <div class="btn2">
-                    <a href="https://www.youtube.com/watch?v=LDBojdBAjXU" target="_blank">Watch Trailer</a>
+                    <a href="https://www.youtube.com/watch?v=-b0veB7q9P4" target="_blank">Watch Trailer</a>
                 </div>
             </div>
         </div>
     </div>
     <div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)"><img src="./assets/arr_right.png" alt="arrow" style="width: 20px; height: 20px;"></a>
+        <a class="next" onclick="plusSlides(1)"><img src="./assets/arr_right.png" alt="arrow" style="width: 20px; height: 20px; rotate: 180deg;"></a>
     </div>
 </div>
 
@@ -260,4 +260,3 @@
         slides[slideIndex].style.display = "block";
     }
 </script>
-
