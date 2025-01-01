@@ -12,7 +12,7 @@ if (!isset($_GET['id'])) {
 }
 
 // Replace 'YOUR_API_KEY' with your actual RAWG API key
-$apiKey = 'YOUR_API_KEY';
+$apiKey = 'eb60a4cf05bc40a09666b54f1647d74c';
 $gameId = $_GET['id'];
 
 // Fetch game details
