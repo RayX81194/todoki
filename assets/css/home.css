@@ -40,9 +40,9 @@ body{
 }
 .trend-cards {
     margin-top: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1rem;
 }
 .trend-card {
     width: 200px;
@@ -53,7 +53,7 @@ body{
 }
 .trend-card img {
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: .1s ease-in-out;
 
 }
@@ -83,4 +83,32 @@ body{
 .card-info span {
     font-size: 14px;
     color: #ccc;
+}
+
+
+::-webkit-scrollbar{
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #131212;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #585858;
+  }
+
+@media (max-width: 480px) {
+    body{
+        margin: 0 0.8rem;
+    }
+    .trend-cards {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .trend-card {
+        width: 100%;
+    }
+
 }
