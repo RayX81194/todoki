@@ -1,21 +1,43 @@
-                <?php foreach ($games as $game): ?>
+<section>
+        <?php include("components/slideshow.php"); ?>
+
+        <div class="trends">
+            <div class="title">
+                <h1>Trending Games</h1>
+                <a href="trending.php">See More <img src="./assets/arr_right.png" alt="arrow" style="width: 20px; height: 20px; rotate: 180deg;"></a>
+            </div>
+            <div class="trend-cards">
+                <?php foreach ($trendingGames as $game): ?>
                     <div class="trend-card">
+                        <a href="game.php?id=<?php echo $game['id']; ?>">
+                            <img src="<?php echo $game['background_image']; ?>" alt="<?php echo $game['name']; ?>">
+                        <div class="card-info">
+                            <span><?php echo substr($game['released'], 0, 4); ?></span>
+                            <h2><?php echo $game['name']; ?></h2>
+                        </div>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+
+        <div class="trends">
+            <div class="title">
+                <h1>Upcoming Games</h1>
+                <a href="upcoming.php">See More <img src="./assets/arr_right.png" alt="arrow" style="width: 20px; height: 20px; rotate: 180deg;"></a>
+            </div>
+            <div class="trend-cards">
+                <?php foreach ($upcomingGames as $game): ?>
+                    <div class="trend-card">
+                    <a href="game.php?id=<?php echo $game['id']; ?>">
                         <img src="<?php echo $game['background_image']; ?>" alt="<?php echo $game['name']; ?>">
                         <div class="card-info">
                             <span><?php echo substr($game['released'], 0, 4); ?></span>
                             <h2><?php echo $game['name']; ?></h2>
                         </div>
+                    </a>
                     </div>
                 <?php endforeach; ?>
-
-
-// Replace 'YOUR_API_KEY' with your actual RAWG API key
-$apiKey = 'eb60a4cf05bc40a09666b54f1647d74c';
-$url = 'https://api.rawg.io/api/games?key=' . $apiKey . '&dates=2019-01-01,2023-12-31&ordering=-added   ';
-
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-$response = curl_exec($ch);
-curl_close($ch);
-$result = json_decode($response, true);
-$games = $result['results'];
+            </div>
+        </div>
+    </section>
