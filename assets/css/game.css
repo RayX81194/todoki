@@ -14,15 +14,40 @@ body{
     background-color: #160F0F;
     border-radius: 1rem;
     width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 2rem; /* Uniform padding */
+    justify-content: center;
+    padding: 2rem;
+}
+.game-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
-.game-details img{
+.game-info h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.game-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.game-image img{
     width: 100%;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+    border-top: 2px solid #5F5454;
+    border-left: 2px solid #5F5454;
+    border-right: 2px solid #5F5454;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    overflow: hidden;
 }
