@@ -30,54 +30,32 @@ $gameDetails = json_decode($gameResponse, true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $gameDetails['name']; ?> - Todoki</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.svg">
-    <link href="./assets/css/game.css" rel="stylesheet">
+    <link href="./assets/css/game.css?v=2" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <style>
-        *{
-            font-family: "Space Grotesk", serif;
-        }
-        body {
-            background-color: #181717;
-            color: white;
-            margin: 0 2.5rem;
-        }
-        .game-details {
-            margin: 2rem 0;
-            padding: 0 2rem;
-        }
-        .game-details img {
-            width: 100%;
-            height: auto;
-        }
-        .game-info {
-            margin-top: 1rem;
-        }
-        .game-info h1 {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-        .game-info p {
-            font-size: 1rem;
-            margin: 1rem 0;
-        }
-    </style>
+
 </head>
 <body>
     <!-- Navbar -->
     <?php include("components/logged_navbar.php"); ?>
 
     <!-- Main Content -->
-    <section class="game-details">
-        <img src="<?php echo $gameDetails['background_image']; ?>" alt="<?php echo $gameDetails['name']; ?>">
-        <div class="game-info">
-            <h1><?php echo $gameDetails['name']; ?></h1>
-            <p><strong>Released:</strong> <?php echo $gameDetails['released']; ?></p>
-            <p><strong>Rating:</strong> <?php echo $gameDetails['rating']; ?> / 5</p>
-            <p><?php echo $gameDetails['description_raw']; ?></p>
-        </div>
-    </section>
+    <div class="container">
+        <section class="game-details">
+            <div class="game-info">
+                <h1><?php echo $gameDetails['name']; ?></h1>
+                <p><strong>Released:</strong> <?php echo $gameDetails['released']; ?></p>
+                <p><strong>Rating:</strong> <?php echo $gameDetails['rating']; ?> / 5</p>
+                <p><?php echo $gameDetails['description_raw']; ?></p>
+            </div>
+            <div class="additional-info">
+                <div class="game-image">
+                    <img src="<?php echo $gameDetails['background_image']; ?>" alt="<?php echo $gameDetails['name']; ?>">
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- Footer -->
     <?php include("components/footer.php"); ?>

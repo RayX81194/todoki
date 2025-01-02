@@ -1,0 +1,28 @@
+*{
+    font-family: "Space Grotesk", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181717;
+    color: white;
+    margin: 0 2.5rem;
+}
+
+.game-details {
+    background-color: #160F0F;
+    border-radius: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem; /* Uniform padding */
+}
+
+.game-details img{
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
