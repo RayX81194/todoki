@@ -34,49 +34,6 @@ if ($searchQuery) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <style>
-        *{
-            font-family: "Space Grotesk", serif;
-        }
-        body {
-            background-color: #181717;
-            color: white;
-            margin: 0 2.5rem;
-        }
-        .search-container {
-            margin: 2rem 0;
-            padding: 0 2rem;
-        }
-        .search-results {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .search-card {
-            width: 200px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            position: relative;
-        }
-        .search-card img {
-            width: 100%;
-            height: auto;
-            transition: .3s ease-in-out;
-        }
-        .card-info {
-            padding: 10px;
-        }
-        .card-info h2 {
-            font-size: 18px;
-            margin: 10px 0 5px;
-        }
-        .card-info span {
-            font-size: 14px;
-            color: #ccc;
-        }
-    </style>
 </head>
 <body>
     <!-- Navbar -->
