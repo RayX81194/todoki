@@ -83,7 +83,27 @@ if ($searchQuery) {
     <?php include("components/logged_navbar.php"); ?>
 
     <!-- Main Content -->
-
+    <section class="search-container">
+        <h1>Search Results for "<?php echo htmlspecialchars($searchQuery); ?>"</h1>
+        <div class="search-results">
+            <?php if (empty($searchResults)): ?>
+                <p>No results found.</p>
+            <?php else: ?>
+                <?php foreach ($searchResults as $game): ?>
+                    <div class="search-card">
+                        <a href="game.php?id=<?php echo $game['id']; ?>">
+                        <img src="<?php echo $game['background_image']; ?>" alt="<?php echo $game['name']; ?>">
+                        <div class="card-info">
+                            <span><?php echo substr($game['released'], 0, 4); ?></span>
+                            <h2><?php echo $game['name']; ?></h2>
+                        </div>
+                        </a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </section>
 
     <!-- Footer -->
     <?php include("components/footer.php"); ?>
