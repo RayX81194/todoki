@@ -124,4 +124,14 @@ body{
     padding-right: 1rem;
 }
 
+.game-screenshots {
+    background-color: #160F0F;
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+}
+
 

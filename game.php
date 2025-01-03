@@ -5,13 +5,10 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
     exit;
 }
 
-// Check if game ID is provided
 if (!isset($_GET['id'])) {
     echo "No game ID provided.";
     exit;
 }
-
-// Replace 'YOUR_API_KEY' with your actual RAWG API key
 $apiKey = 'eb60a4cf05bc40a09666b54f1647d74c';
 $gameId = $_GET['id'];
 
@@ -30,7 +27,7 @@ $gameDetails = json_decode($gameResponse, true);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $gameDetails['name']; ?> - Todoki</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.svg">
-    <link href="./assets/css/game.css?v=7" rel="stylesheet">
+    <link href="./assets/css/game.css?v=8" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -115,6 +112,10 @@ $gameDetails = json_decode($gameResponse, true);
                     </div>
                     </div>
                 </div>
+        </section>
+
+        <section class="game-screenshots">
+            <h1>Screenshots</h1>
         </section>
     </div>
 
