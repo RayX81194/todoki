@@ -24,7 +24,7 @@
                 <a href="signup.php"><button class="signups">Sign Up</button></a>
             </div>
             <div class="images">
-                <img class="header-img" src="assets/header.png" alt="Header Image">
+                <img class="header-img" src="assets/header-img2.png" alt="Header Image">
             </div>
         </header>
 

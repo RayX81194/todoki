@@ -1,43 +1,22 @@
-<section>
-        <?php include("components/slideshow.php"); ?>
+<p><strong>Playtime:</strong> <?php echo $gameDetails['playtime']; ?> hours</p>
 
-        <div class="trends">
-            <div class="title">
-                <h1>Trending Games</h1>
-                <a href="trending.php">See More <img src="./assets/arr_right.png" alt="arrow" style="width: 20px; height: 20px; rotate: 180deg;"></a>
-            </div>
-            <div class="trend-cards">
-                <?php foreach ($trendingGames as $game): ?>
-                    <div class="trend-card">
-                        <a href="game.php?id=<?php echo $game['id']; ?>">
-                            <img src="<?php echo $game['background_image']; ?>" alt="<?php echo $game['name']; ?>">
-                        <div class="card-info">
-                            <span><?php echo substr($game['released'], 0, 4); ?></span>
-                            <h2><?php echo $game['name']; ?></h2>
-                        </div>
-                        </a>
+<div class="additional-info">
+                <div class="game-image">
+                    <img src="<?php echo $gameDetails['background_image']; ?>" alt="<?php echo $gameDetails['name']; ?>">
+                </div>
+                <a href="<?php echo $gameDetails['website']; ?>" target="_blank" class="btn"><img src="./assets/arr_right.png" alt="Website Icon">Visit Website</a>
+                <div class="dev-info">
+                    <div class="info">
+                        <h2>Developer:</h2>
+                        <p><?php echo $gameDetails['developers'][0]['name']; ?></p>
                     </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-
-        <div class="trends">
-            <div class="title">
-                <h1>Upcoming Games</h1>
-                <a href="upcoming.php">See More <img src="./assets/arr_right.png" alt="arrow" style="width: 20px; height: 20px; rotate: 180deg;"></a>
-            </div>
-            <div class="trend-cards">
-                <?php foreach ($upcomingGames as $game): ?>
-                    <div class="trend-card">
-                    <a href="game.php?id=<?php echo $game['id']; ?>">
-                        <img src="<?php echo $game['background_image']; ?>" alt="<?php echo $game['name']; ?>">
-                        <div class="card-info">
-                            <span><?php echo substr($game['released'], 0, 4); ?></span>
-                            <h2><?php echo $game['name']; ?></h2>
-                        </div>
-                    </a>
+                    <div class="info">
+                        <h2>Publisher:</h2>
+                        <p><?php echo $gameDetails['publishers'][0]['name']; ?></p>
                     </div>
-                <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
+                    <div class="info">
+                        <h2>Rating:</h2>
+                        <p><?php echo $gameDetails['esrb_rating']['name']; ?></p>
+                    </div>
+                    </div>
+                </div>
