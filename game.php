@@ -30,6 +30,15 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $screenshotsResponse = curl_exec($ch);
 curl_close($ch);
 $screenshots = json_decode($screenshotsResponse, true)['results'];
+
+// Check for PC requirements
+$pcRequirements = null;
+foreach ($gameDetails['platforms'] as $platform) {
+    if ($platform['platform']['name'] === 'PC') {
+        $pcRequirements = $platform['requirements'];
+        break;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -140,10 +149,23 @@ $screenshots = json_decode($screenshotsResponse, true)['results'];
         <img id="modalImage" src="" alt="Screenshot">
     </div>
 
+    <?php if ($pcRequirements): ?>
     <section class="game-requirements">
-        
-
+        <h1>System Requirements (PC)</h1>
+        <div class="requirements">
+            <?php if (isset($pcRequirements['minimum'])): ?>
+            <div class="requirement">
+                <p><?php echo nl2br($pcRequirements['minimum']); ?></p>
+            </div>
+            <?php endif; ?>
+            <?php if (isset($pcRequirements['recommended'])): ?>
+            <div class="requirement">
+                <p><?php echo nl2br($pcRequirements['recommended']); ?></p>
+            </div>
+            <?php endif; ?>
+        </div>
     </section>
+    <?php endif; ?>
 
     <!-- Footer -->
     <?php include("components/footer.php"); ?>
