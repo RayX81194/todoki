@@ -170,6 +170,7 @@ body{
 .modal img {
     max-width: 90%;
     max-height: 90%;
+    border-radius: 20px;
 }
 .modal .close {
     position: absolute;
@@ -179,5 +180,20 @@ body{
     background-color: transparent;
     cursor: pointer;
 }
+
+::-webkit-scrollbar{
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: #131212;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #585858;
+  }
+
 
 
