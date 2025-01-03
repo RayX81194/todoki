@@ -5,10 +5,13 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
     exit;
 }
 
+// Check if game ID is provided
 if (!isset($_GET['id'])) {
     echo "No game ID provided.";
     exit;
 }
+
+// Replace 'YOUR_API_KEY' with your actual RAWG API key
 $apiKey = 'eb60a4cf05bc40a09666b54f1647d74c';
 $gameId = $_GET['id'];
 
@@ -19,6 +22,14 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $gameResponse = curl_exec($ch);
 curl_close($ch);
 $gameDetails = json_decode($gameResponse, true);
+
+// Fetch game screenshots
+$screenshotsUrl = 'https://api.rawg.io/api/games/' . $gameId . '/screenshots?key=' . $apiKey;
+$ch = curl_init($screenshotsUrl);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+$screenshotsResponse = curl_exec($ch);
+curl_close($ch);
+$screenshots = json_decode($screenshotsResponse, true)['results'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +42,6 @@ $gameDetails = json_decode($gameResponse, true);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
 </head>
 <body>
     <!-- Navbar -->
@@ -116,11 +126,35 @@ $gameDetails = json_decode($gameResponse, true);
 
         <section class="game-screenshots">
             <h1>Screenshots</h1>
+            <div class="screenshots">
+                <?php foreach ($screenshots as $screenshot): ?>
+                    <img src="<?php echo $screenshot['image']; ?>" alt="Screenshot" onclick="openModal('<?php echo $screenshot['image']; ?>')">
+                <?php endforeach; ?>
+            </div>
         </section>
+    </div>
+
+    <!-- Modal for viewing screenshots -->
+    <div id="screenshotModal" class="modal">
+        <button class="close" onclick="closeModal()">×</button>
+        <img id="modalImage" src="" alt="Screenshot">
     </div>
 
     <!-- Footer -->
     <?php include("components/footer.php"); ?>
     <script src="./assets/js/script.js"></script>
+    <script>
+        function openModal(imageSrc) {
+            const modal = document.getElementById('screenshotModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageSrc;
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('screenshotModal');
+            modal.style.display = 'none';
+        }
+    </script>
 </body>
 </html>

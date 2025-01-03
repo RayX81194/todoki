@@ -125,13 +125,61 @@ body{
 }
 
 .game-screenshots {
+    margin-top: 2rem;
     background-color: #160F0F;
     border-radius: 1rem;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     padding: 2rem;
+    gap: 1rem;
+}
+
+.game-screenshots h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+.screenshots img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.screenshots img:hover {
+    transform: scale(1.05);
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.modal .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 
