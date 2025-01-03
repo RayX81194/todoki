@@ -140,6 +140,11 @@ $screenshots = json_decode($screenshotsResponse, true)['results'];
         <img id="modalImage" src="" alt="Screenshot">
     </div>
 
+    <section class="game-requirements">
+        
+
+    </section>
+
     <!-- Footer -->
     <?php include("components/footer.php"); ?>
     <script src="./assets/js/script.js"></script>
