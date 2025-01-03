@@ -136,7 +136,7 @@ $screenshots = json_decode($screenshotsResponse, true)['results'];
 
     <!-- Modal for viewing screenshots -->
     <div id="screenshotModal" class="modal">
-        <button class="close" onclick="closeModal()">×</button>
+        <button class="close" onclick="closeModal()"><img src="./assets/close.svg" alt="Close Icon" style="width: 25px; height: 25px;"></button>
         <img id="modalImage" src="" alt="Screenshot">
     </div>
 
