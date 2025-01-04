@@ -196,7 +196,41 @@ if (isset($gameDetails['ratings'])) {
     <?php endif; ?>
 
     <section class="ratings">
- 
+    <h1>User Ratings</h1>
+    <div class="rating">
+        <div class="rating-info">
+            <span>Exceptional:</span>
+            <div class="bar-container">
+                <div class="bar exceptional" style="width: <?php echo $ratings['exceptional']; ?>%;"></div>
+                <div class="bar-background"></div>
+            </div>
+            <span class="percentage"><?php echo $ratings['exceptional']; ?>%</span>
+        </div>
+        <div class="rating-info">
+            <span>Recommended:</span>
+            <div class="bar-container">
+                <div class="bar recommended" style="width: <?php echo $ratings['recommended']; ?>%;"></div>
+                <div class="bar-background"></div>
+            </div>
+            <span class="percentage"><?php echo $ratings['recommended']; ?>%</span>
+        </div>
+        <div class="rating-info">
+            <span>Meh:</span>
+            <div class="bar-container">
+                <div class="bar meh" style="width: <?php echo $ratings['meh']; ?>%;"></div>
+                <div class="bar-background"></div>
+            </div>
+            <span class="percentage"><?php echo $ratings['meh']; ?>%</span>
+        </div>
+        <div class="rating-info">
+            <span>Skip:</span>
+            <div class="bar-container">
+                <div class="bar skip" style="width: <?php echo $ratings['skip']; ?>%;"></div>
+                <div class="bar-background"></div>
+            </div>
+            <span class="percentage"><?php echo $ratings['skip']; ?>%</span>
+        </div>
+    </div>
 </section>
 
     <!-- Footer -->
