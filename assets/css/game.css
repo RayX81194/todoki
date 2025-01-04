@@ -50,11 +50,12 @@ body{
 }
 
 .tags{
+    color: #A4A4A4;
     font-size: 0.85rem;
 }
 .tag-list{
     font-size: 0.85rem;
-    color: #A4A4A4;
+    color: white;
 }
 
 .additional-info{
@@ -109,6 +110,7 @@ body{
     text-decoration: none;
 }
 
+
 .dev-info{
     display: flex;
     flex-direction: column;
@@ -124,6 +126,10 @@ body{
 .info span{
     color:#A4A4A4;
     padding-right: 1rem;
+}
+
+.info p{
+    text-align: right;
 }
 
 .game-screenshots {
@@ -153,6 +159,7 @@ body{
     height: auto;
     cursor: pointer;
     transition: transform 0.3s;
+    border-radius: 1rem;
 }
 .screenshots img:hover {
     transform: scale(1.05);
@@ -195,10 +202,108 @@ body{
     padding: 2rem;
 }
 
+.game-requirements h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .requirements{
+    margin-top: 1rem;
     display: flex;
     gap: 1rem;
 }
+
+.ratings {
+    margin-top: 2rem;
+    background-color: #160F0F;
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.ratings h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 10px;
+    width: 100%;
+}
+
+.rating-info {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.rating-info span {
+    font-size: 1rem;
+    color: #A4A4A4;
+    width: 100px;
+}
+
+.bar-container {
+    position: relative;
+    flex-grow: 1;
+    height: 20px;
+    margin: 0 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.bar-background {
+    height: 100%;
+    width: 100%;
+    background-color: #181717;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.exceptional {
+    background-color: #4caf4f8e; /* Green */
+}
+
+.recommended {
+    background-color: #2195f3a0; /* Blue */
+}
+
+.meh {
+    background-color: #ffc10792; /* Amber */
+}
+
+.skip {
+    background-color: #f4433695; /* Red */
+}
+
+.percentage {
+    font-size: 1rem;
+    color: white;
+    width: 50px;
+    text-align: right;
+}
+
+
+
 
 ::-webkit-scrollbar{
     width: 5px;

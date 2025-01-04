@@ -39,6 +39,32 @@ foreach ($gameDetails['platforms'] as $platform) {
         break;
     }
 }
+
+// Fetch user ratings
+$ratings = [
+    'exceptional' => 0,
+    'recommended' => 0,
+    'meh' => 0,
+    'skip' => 0
+];
+if (isset($gameDetails['ratings'])) {
+    foreach ($gameDetails['ratings'] as $rating) {
+        switch ($rating['title']) {
+            case 'exceptional':
+                $ratings['exceptional'] = $rating['percent'];
+                break;
+            case 'recommended':
+                $ratings['recommended'] = $rating['percent'];
+                break;
+            case 'meh':
+                $ratings['meh'] = $rating['percent'];
+                break;
+            case 'skip':
+                $ratings['skip'] = $rating['percent'];
+                break;
+        }
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +73,7 @@ foreach ($gameDetails['platforms'] as $platform) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $gameDetails['name']; ?> - Todoki</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.svg">
-    <link href="./assets/css/game.css?v=8" rel="stylesheet">
+    <link href="./assets/css/game.css?v=3" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -118,12 +144,14 @@ foreach ($gameDetails['platforms'] as $platform) {
                     </div>
                     <div class="info">
                         <span>Genre:</span>
+                        <p>
                                 <?php
                                 $genres = array_map(function($genre) {
                                     return $genre['name'];
                                 }, $gameDetails['genres']);
                                 echo implode(', ', array_slice($genres, 0, -1)) . (count($genres) > 1 ? ", " : "") . end($genres);
                                 ?>
+                        </p>
                     </div>
                     <div class="info">
                         <span>ESRB Rating:</span>
@@ -166,6 +194,10 @@ foreach ($gameDetails['platforms'] as $platform) {
         </div>
     </section>
     <?php endif; ?>
+
+    <section class="ratings">
+ 
+</section>
 
     <!-- Footer -->
     <?php include("components/footer.php"); ?>
