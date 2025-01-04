@@ -77,7 +77,7 @@
     <p class="description">Enjoyed the project? Please let me know at:</p>
     <a class="mail" href="mailto:contact@todoki.club">contact@todoki.club</a>
     <div class="credits">
-        <p>© 2023 Todoki. All rights reserved.</p>
+        <p>© <?php echo date("Y"); ?> Todoki. All rights reserved.</p>
         <p>Made with ❤️ by <a class="link" href="https://github.com/RayX81194">&lt;Ray&gt;</a></p>
     </div>
     

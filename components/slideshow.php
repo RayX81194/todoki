@@ -145,7 +145,7 @@
             <div class="game-links">
                 <div class="btn1">
                     <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
-                    <a href="https://www.cyberpunk.net/in/en/" target="_blank">Read More</a>
+                    <a href="https://www.cyberpunk.net/in/en/" target="_blank">Know More</a>
                 </div>
                 <div class="btn2">
                     <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
