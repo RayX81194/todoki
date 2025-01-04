@@ -51,7 +51,7 @@ $totalPages = ceil($totalResults / $pageSize);
         <h1>Search Results for "<?php echo htmlspecialchars($searchQuery); ?>"</h1>
         <div class="search-results">
             <?php if (empty($searchResults)): ?>
-                <p>No results found.</p>
+                <p>No results found</p>
             <?php else: ?>
                 <?php foreach ($searchResults as $game): ?>
                     <div class="search-card">
