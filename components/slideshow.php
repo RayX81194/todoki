@@ -145,7 +145,7 @@
             <div class="game-links">
                 <div class="btn1">
                     <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
-                    <a href="https://www.cyberpunk.net/in/en/" target="_blank">Know More</a>
+                    <a href="game.php?id=41494">Know More</a>
                 </div>
                 <div class="btn2">
                     <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
@@ -167,7 +167,7 @@
             <div class="game-links">
                 <div class="btn1">
                 <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
-                    <a href="https://www.rocketleague.com/" target="_blank">Read More</a>
+                    <a href="game.php?id=3272">Know More</a>
                 </div>
                 <div class="btn2">
                 <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
@@ -189,7 +189,7 @@
             <div class="game-links">
                 <div class="btn1">
                 <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
-                    <a href="https://www.blackmythgame.com/" target="_blank">Read More</a>
+                    <a href="game.php?id=481913">Know More</a>
                 </div>
                 <div class="btn2">
                 <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
@@ -211,7 +211,7 @@
             <div class="game-links">
                 <div class="btn1">
                 <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
-                    <a href="https://www.rockstargames.com/reddeadredemption2/" target="_blank">Read More</a>
+                    <a href="game.php?id=28">Know More</a>
                 </div>
                 <div class="btn2">
                 <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">
@@ -233,7 +233,7 @@
             <div class="game-links">
                 <div class="btn1">
                 <img src="./assets/arr_right.svg" alt="arrow" style="width: 20px; height: 20px;">
-                    <a href="https://avengers.square-enix-games.com/" target="_blank">Read More</a>
+                    <a href="game.php?id=993875">Know More</a>
                 </div>
                 <div class="btn2">
                 <img src="./assets/play.svg" alt="arrow" style="width: 20px; height: 20px;">

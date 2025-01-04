@@ -129,36 +129,36 @@ if (isset($gameDetails['ratings'])) {
                 </p>
             </div>
             <div class="additional-info">
-                <div class="game-image">
-                    <img src="<?php echo $gameDetails['background_image']; ?>" alt="<?php echo $gameDetails['name']; ?>">
-                </div>
-                <a href="<?php echo $gameDetails['website']; ?>" target="_blank" class="btn"><img src="./assets/arr_right.png" alt="Website Icon" style="rotate: 180deg;">Visit Website</a>
-                <div class="dev-info">
-                    <div class="info">
-                        <span>Developer:</span>
-                        <p><?php echo $gameDetails['developers'][0]['name']; ?></p>
-                    </div>
-                    <div class="info">
-                        <span>Publisher:</span>
-                        <p><?php echo $gameDetails['publishers'][0]['name']; ?></p>
-                    </div>
-                    <div class="info">
-                        <span>Genre:</span>
-                        <p>
-                                <?php
-                                $genres = array_map(function($genre) {
-                                    return $genre['name'];
-                                }, $gameDetails['genres']);
-                                echo implode(', ', array_slice($genres, 0, -1)) . (count($genres) > 1 ? ", " : "") . end($genres);
-                                ?>
-                        </p>
-                    </div>
-                    <div class="info">
-                        <span>ESRB Rating:</span>
-                        <p><?php echo $gameDetails['esrb_rating']['name']; ?></p>
-                    </div>
-                    </div>
-                </div>
+    <div class="game-image">
+        <img src="<?php echo $gameDetails['background_image']; ?>" alt="<?php echo $gameDetails['name']; ?>">
+    </div>
+    <a href="<?php echo $gameDetails['website']; ?>" target="_blank" class="btn"><img src="./assets/arr_right.png" alt="Website Icon" style="rotate: 180deg;">Visit Website</a>
+    <div class="dev-info">
+        <div class="info">
+            <span>Developer:</span>
+            <p><?php echo isset($gameDetails['developers'][0]['name']) ? $gameDetails['developers'][0]['name'] : '-'; ?></p>
+        </div>
+        <div class="info">
+            <span>Publisher:</span>
+            <p><?php echo isset($gameDetails['publishers'][0]['name']) ? $gameDetails['publishers'][0]['name'] : '-'; ?></p>
+        </div>
+        <div class="info">
+            <span>Genre:</span>
+            <p>
+                <?php
+                $genres = array_map(function($genre) {
+                    return $genre['name'];
+                }, $gameDetails['genres']);
+                echo !empty($genres) ? implode(', ', array_slice($genres, 0, -1)) . (count($genres) > 1 ? ", " : "") . end($genres) : '-';
+                ?>
+            </p>
+        </div>
+        <div class="info">
+            <span>ESRB Rating:</span>
+            <p><?php echo isset($gameDetails['esrb_rating']['name']) ? $gameDetails['esrb_rating']['name'] : '-'; ?></p>
+        </div>
+    </div>
+</div>
         </section>
 
         <section class="game-screenshots">
