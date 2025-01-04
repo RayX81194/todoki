@@ -280,19 +280,19 @@ body{
 }
 
 .exceptional {
-    background-color: #4caf4f8e; /* Green */
+    background-color: #4caf4fa7; /* Green */
 }
 
 .recommended {
-    background-color: #2195f3a0; /* Blue */
+    background-color: #2195f399; /* Blue */
 }
 
 .meh {
-    background-color: #ffc10792; /* Amber */
+    background-color: #ffc1079a; /* Amber */
 }
 
 .skip {
-    background-color: #f4433695; /* Red */
+    background-color: #f4433697; /* Red */
 }
 
 .percentage {
