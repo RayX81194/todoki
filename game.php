@@ -11,8 +11,8 @@ if (!isset($_GET['id'])) {
     exit;
 }
 
-// Replace 'YOUR_API_KEY' with your actual RAWG API key
-$apiKey = 'eb60a4cf05bc40a09666b54f1647d74c';
+$config = require './helpers/config.php';
+$apiKey = $config['rawg_api_key'];
 $gameId = $_GET['id'];
 
 // Fetch game details

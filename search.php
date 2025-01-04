@@ -11,7 +11,8 @@ $page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
 $pageSize = 10;
 
 // Replace 'YOUR_API_KEY' with your actual RAWG API key
-$apiKey = 'eb60a4cf05bc40a09666b54f1647d74c';
+$config = require './helpers/config.php';
+$apiKey = $config['rawg_api_key'];
 $searchResults = [];
 $totalResults = 0;
 

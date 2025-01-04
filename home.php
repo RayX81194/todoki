@@ -6,7 +6,8 @@ if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
 }
 
 // Replace 'YOUR_API_KEY' with your actual RAWG API key
-$apiKey = 'eb60a4cf05bc40a09666b54f1647d74c';
+$config = require './helpers/config.php';
+$apiKey = $config['rawg_api_key'];
 
 // Fetch trending games
 $trendingUrl = 'https://api.rawg.io/api/games?key=' . $apiKey . '&dates=2019-01-01,2023-12-31&ordering=-added&page_size=6';
