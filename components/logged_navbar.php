@@ -123,6 +123,7 @@ $name = $_SESSION['name'];
     <div id="myDropdown" class="dropdown-content">
     <div class="dropdown-item">
       <p>Hey, <?php echo $name; ?></p>
+      <a href="user.php">User Profile</a>
       <a href="logout.php">Logout</a>
     </div>
     </div>
