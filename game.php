@@ -73,7 +73,7 @@ if (isset($gameDetails['ratings'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $gameDetails['name']; ?> - Todoki</title>
     <link rel="icon" type="image/x-icon" href="assets/logo.svg">
-    <link href="./assets/css/game.css?v=3" rel="stylesheet">
+    <link href="./assets/css/game.css?v=5" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">

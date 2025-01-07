@@ -25,6 +25,7 @@ body{
     flex-direction: column;
     gap: 0.5rem;
     width: 70%;
+    padding: 1.5rem 0;
 }
 
 .game-title{
@@ -291,7 +292,7 @@ body{
     background-color: #ffc1079a; /* Amber */
 }
 
-.skip {
+.skip { 
     background-color: #f4433697; /* Red */
 }
 

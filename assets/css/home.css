@@ -42,7 +42,7 @@ body{
     margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(6, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .trend-card {
     width: 210px;
